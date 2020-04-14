@@ -1,0 +1,2 @@
+;;; -*- no-byte-compile: t -*-
+(define-package "flycheck-grammarly" "20200203.446" "Grammarly support for Flycheck" '((emacs "25.1") (flycheck "0.14") (grammarly "0.0.1") (cl-lib "0.6")) :commit "72425743364f4fd9516f94546a7432457e1e7df0" :authors '(("Shen, Jen-Chieh" . "jcs090218@gmail.com")) :maintainer '("Shen, Jen-Chieh" . "jcs090218@gmail.com") :url "https://github.com/jcs090218/flycheck-grammarly")
