@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 15
+;;     Update #: 16
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -77,7 +77,7 @@
  '(dired-dwim-target t)
  '(dired-recursive-copies (quote always))
  '(dired-recursive-deletes (quote always))
- '(doom-modeline-height 15 nil nil "Customized with use-package doom-modeline")
+ '(doom-modeline-height 6 nil nil "Customized with use-package doom-modeline")
  '(doom-modeline-icon t nil nil "Customized with use-package doom-modeline")
  '(doom-modeline-major-mode-color-icon t nil nil "Customized with use-package doom-modeline")
  '(doom-modeline-minor-modes t nil nil "Customized with use-package doom-modeline")
@@ -130,7 +130,7 @@
  '(p4-verbose nil)
  '(package-selected-packages
    (quote
-    (auctex haskell-mode company lsp-mode flycheck-posframe flycheck-grammarly yasnippet treemacs projectile magit lsp-pyre ivy-rich ivy-posframe yasnippet-snippets which-key web-mode use-package undo-tree typescript-mode treemacs-projectile treemacs-magit toc-org term-keys super-save sudo-edit speed-type smartparens shell-here quickrun pyim posframe popup-kill-ring plantuml-mode pdf-tools ox-gfm org-edit-latex mu4e-overview mu4e-alert modern-cpp-font-lock lsp-ui lsp-python-ms lsp-java json-mode js2-mode iedit htmlize highlight-indent-guides graphql go-mode format-all flycheck exec-path-from-shell evil-nerd-commenter ess erc-image erc-hl-nicks emmet-mode dumb-jump doom-themes doom-modeline disk-usage discover-my-major dired-single diminish dashboard dap-mode crux counsel company-tabnine company-lsp company-box ccls beacon auto-package-update amx all-the-icons-dired aio 2048-game)))
+    (groovy-mode dockerfile-mode docker auctex haskell-mode company lsp-mode flycheck-posframe flycheck-grammarly yasnippet treemacs projectile magit lsp-pyre ivy-rich ivy-posframe yasnippet-snippets which-key web-mode use-package undo-tree typescript-mode treemacs-projectile treemacs-magit toc-org term-keys super-save sudo-edit speed-type smartparens shell-here quickrun pyim posframe popup-kill-ring plantuml-mode pdf-tools ox-gfm org-edit-latex mu4e-overview mu4e-alert modern-cpp-font-lock lsp-ui lsp-python-ms lsp-java json-mode js2-mode iedit htmlize highlight-indent-guides graphql go-mode format-all flycheck exec-path-from-shell evil-nerd-commenter ess erc-image erc-hl-nicks emmet-mode dumb-jump doom-themes doom-modeline disk-usage discover-my-major dired-single diminish dashboard dap-mode crux counsel company-tabnine company-lsp company-box ccls beacon auto-package-update amx all-the-icons-dired aio 2048-game)))
  '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))
  '(recentf-auto-cleanup "05:00am")
  '(recentf-exclude
@@ -145,6 +145,27 @@
  '(size-indication-mode t)
  '(super-save-auto-save-when-idle nil nil nil "Customized with use-package super-save")
  '(super-save-mode nil)
+ '(term-bind-key-alist
+   (quote
+    (("C-c C-c" . term-interrupt-subjob)
+     ("C-c C-e" . term-send-esc)
+     ("C-p" . previous-line)
+     ("C-n" . next-line)
+     ("C-m" . term-send-return)
+     ("C-y" . term-paste)
+     ("M-f" . term-send-forward-word)
+     ("M-b" . term-send-backward-word)
+     ("M-o" . term-send-backspace)
+     ("M-p" . term-send-up)
+     ("M-n" . term-send-down)
+     ("M-M" . term-send-forward-kill-word)
+     ("M-N" . term-send-backward-kill-word)
+     ("<C-backspace>" . term-send-backward-kill-word)
+     ("<M-backspace>" . term-send-backward-kill-word)
+     ("M-r" . term-send-reverse-search-history)
+     ("M-d" . term-send-delete-word)
+     ("M-," . term-send-raw)
+     ("M-." . comint-dynamic-complete))) t)
  '(tool-bar-mode nil)
  '(undo-tree-visualizer-diff t)
  '(undo-tree-visualizer-timestamps t)
