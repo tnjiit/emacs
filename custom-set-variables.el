@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 16
+;;     Update #: 17
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -65,9 +65,12 @@
  '(auto-revert-use-notify nil)
  '(auto-revert-verbose nil)
  '(auto-save-default nil)
- '(avy-style (quote pre))
- '(avy-timeout-seconds 0.3)
+ '(avy-style (quote pre) t)
+ '(avy-timeout-seconds 0.3 t)
  '(csv-header-lines 1)
+ '(custom-safe-themes
+   (quote
+    ("1526aeed166165811eefd9a6f9176061ec3d121ba39500af2048073bea80911e" default)))
  '(default-gutter-position (quote bottom))
  '(delete-by-moving-to-trash t)
  '(desktop-after-read-hook (quote (list-buffers)))
@@ -110,7 +113,7 @@
            " " filename-and-process)
      (mark " "
            (name 16 -1)
-           " " filename))))
+           " " filename))) t)
  '(ibuffer-vc-skip-if-remote nil t)
  '(ivy-count-format "【%d/%d】")
  '(ivy-height 10)
