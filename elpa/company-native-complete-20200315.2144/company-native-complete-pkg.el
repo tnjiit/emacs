@@ -1,0 +1,2 @@
+;;; -*- no-byte-compile: t -*-
+(define-package "company-native-complete" "20200315.2144" "Company completion using native-complete" '((emacs "25.1") (company "0.9.0") (native-complete "0.1.0")) :commit "db889d7d58fc3d0c8a79dff7e5b20b30a982d87e" :authors '(("Troy Hinckley" . "troy.hinckley@gmail.com")) :maintainer '("Troy Hinckley" . "troy.hinckley@gmail.com") :url "https://github.com/CeleritasCelery/emacs-native-shell-complete")
