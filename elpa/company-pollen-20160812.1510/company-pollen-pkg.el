@@ -1,2 +1,0 @@
-;;; -*- no-byte-compile: t -*-
-(define-package "company-pollen" "20160812.1510" "company-mode completion backend for pollen" '((company "0.9.0") (pollen-mode "1.0")) :commit "d0a33591498013886c2c4676e204cd684954e82a" :keywords '("languages" "pollen" "pollenpub" "company") :authors '(("Junsong Li <ljs.darkfish AT GMAIL>")) :maintainer '("Junsong Li") :url "https://github.com/lijunsong/pollen-mode")

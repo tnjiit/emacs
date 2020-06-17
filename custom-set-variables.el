@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 19
+;;     Update #: 20
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -65,8 +65,8 @@
  '(auto-revert-use-notify nil)
  '(auto-revert-verbose nil)
  '(auto-save-default nil)
- '(avy-style (quote pre) t)
- '(avy-timeout-seconds 0.3 t)
+ '(avy-style (quote pre))
+ '(avy-timeout-seconds 0.3)
  '(csv-header-lines 1)
  '(custom-safe-themes
    (quote

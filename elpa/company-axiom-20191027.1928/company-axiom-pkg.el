@@ -1,2 +1,0 @@
-;;; -*- no-byte-compile: t -*-
-(define-package "company-axiom" "20191027.1928" "A company-mode backend for the axiom-environment system" '((emacs "24") (company "0.9") (axiom-environment "20171021")) :commit "25932da0dc40c6877463cbf019b14ab05a6b0164" :keywords '("axiom" "openaxiom" "fricas" "axiom-environment") :authors '(("Paul Onions" . "paul.onions@acm.org")) :maintainer '("Paul Onions" . "paul.onions@acm.org"))

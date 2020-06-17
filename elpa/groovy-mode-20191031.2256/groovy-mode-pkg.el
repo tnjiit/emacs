@@ -2,7 +2,7 @@
   '((s "1.12.0")
     (emacs "24.3")
     (dash "2.13.0"))
-  :keywords
+  :commit "cafdd98e06a3bbff213f3ccb163de2c42d412b66" :keywords
   '("languages")
   :authors
   '(("Russel Winder" . "russel@winder.org.uk")
