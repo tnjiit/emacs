@@ -6,8 +6,8 @@
 ;; Copyright (C) 2019 Mingde (Matthew) Zeng
 ;; Created: Thu Mar 14 11:37:00 2019 (-0400)
 ;; Version: 2.0.0
-;; Last-Updated: Wed Dec 25 02:33:09 2019 (-0500)
-;;           By: Mingde (Matthew) Zeng
+;; Last-Updated: Tue Jun 23 23:14:46 2020 (-0700)
+;;           By: Tushar Jain
 ;; URL: https://github.com/MatthewZMD/.emacs.d
 ;; Keywords: M-EMACS .emacs.d dired auto-save
 ;; Compatibility: emacs-version >= 26.1
@@ -67,7 +67,7 @@
   :hook
   (dired-mode . (lambda ()
                   (local-set-key (kbd "<mouse-2>") #'dired-find-alternate-file)
-                  (local-set-key (kbd "RET") #'dired-find-alternate-file)
+                  (local-set-key (kbd "RET") #'dired-view-file)
                   (local-set-key (kbd "^")
                                  (lambda () (interactive) (find-alternate-file ".."))))))
 ;; -DiredPackage

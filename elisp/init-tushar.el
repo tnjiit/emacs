@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 101
+;;     Update #: 108
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -306,15 +306,15 @@
         '(counsel-M-x
           (:columns
            ((counsel-M-x-transformer (:width 35))
-            (ivy-rich-counsel-function-docstring (:width 34 :face font-lock-doc-face))))
+            (ivy-rich-counsel-function-docstring (:face font-lock-doc-face))))
           counsel-describe-function
           (:columns
            ((counsel-describe-function-transformer (:width 35))
-            (ivy-rich-counsel-function-docstring (:width 34 :face font-lock-doc-face))))
+            (ivy-rich-counsel-function-docstring (:face font-lock-doc-face))))
           counsel-describe-variable
           (:columns
            ((counsel-describe-variable-transformer (:width 35))
-            (ivy-rich-counsel-variable-docstring (:width 34 :face font-lock-doc-face))))
+            (ivy-rich-counsel-variable-docstring (:face font-lock-doc-face))))
           package-install
           (:columns
            ((ivy-rich-candidate (:width 25))
@@ -324,6 +324,38 @@
   :config
   (ivy-rich-mode +1)
   (setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line))
+
+(defvar watch-history nil)
+(defun watch (command &optional NAME)
+  (interactive
+   (list (read-from-minibuffer "watch " nil nil nil 'watch-history)))
+  (let* ((NAME (or NAME (concat "watch " command)))
+         (switches (split-string-and-unquote command))
+         (termbuf (apply 'make-term NAME "watch" nil switches))
+         (proc (get-buffer-process termbuf)))
+    (set-buffer termbuf)
+    (term-mode)
+    (term-char-mode)
+    (setq show-trailing-whitespace nil)
+    ;; Kill the process interactively with \"q\".
+    (set-process-query-on-exit-flag proc nil)
+    (let ((map (make-sparse-keymap))
+          (cmdquit (make-symbol "watch-quit")))
+      (put cmdquit 'function-documentation "Kill the `watch' buffer.")
+      (put cmdquit 'interactive-form '(interactive))
+      (fset cmdquit (apply-partially 'kill-process proc))
+      (set-keymap-parent map (current-local-map))
+      (define-key map (kbd "q") cmdquit)
+      (use-local-map map))
+    ;; Kill the buffer automatically when the process is killed.
+    (set-process-sentinel
+     proc (lambda (process signal)
+            (and (memq (process-status process) '(exit signal))
+                 (buffer-live-p (process-buffer process))
+                 (kill-buffer (process-buffer process)))))
+    ;; Display the buffer.
+    (switch-to-buffer termbuf)))
+
 
 (provide 'init-tushar)
 

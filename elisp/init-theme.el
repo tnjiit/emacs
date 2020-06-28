@@ -6,7 +6,7 @@
 ;; Copyright (C) 2019 Mingde (Matthew) Zeng
 ;; Created: Thu Mar 14 17:11:56 2019 (-0400)
 ;; Version: 2.0.0
-;; Last-Updated: Tue Apr 14 13:30:10 2020 (-0700)
+;; Last-Updated: Wed Jun 24 00:44:01 2020 (-0700)
 ;;           By: Tushar Jain
 ;; URL: https://github.com/MatthewZMD/.emacs.d
 ;; Keywords: M-EMACS .emacs.d doom-themes doom-modeline

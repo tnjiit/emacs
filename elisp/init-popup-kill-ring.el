@@ -6,8 +6,8 @@
 ;; Copyright (C) 2019 Mingde (Matthew) Zeng
 ;; Created: Thu Mar 14 15:15:40 2019 (-0400)
 ;; Version: 2.0.0
-;; Last-Updated: Thu Aug  8 16:07:32 2019 (-0400)
-;;           By: Mingde (Matthew) Zeng
+;; Last-Updated: Tue Jun 23 23:23:43 2020 (-0700)
+;;           By: Tushar Jain
 ;; URL: https://github.com/MatthewZMD/.emacs.d
 ;; Keywords: M-EMACS .emacs.d popup-kill-ring
 ;; Compatibility: emacs-version >= 26.1
@@ -39,7 +39,7 @@
 
 ;; PopKillRing
 (use-package popup-kill-ring
-  :bind ("M-y" . popup-kill-ring))
+  :bind ("M-p" . popup-kill-ring))
 ;; -PopKillRing
 
 (provide 'init-popup-kill-ring)
