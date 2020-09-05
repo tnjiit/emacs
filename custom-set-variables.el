@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 48
+;;     Update #: 49
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -73,9 +73,9 @@
  '(auto-save-default nil)
  '(avy-style (quote pre) t)
  '(avy-timeout-seconds 0.3 t)
- '(ccls-enable-skipped-ranges nil)
- '(ccls-executable nil)
- '(ccls-sem-highlight-method (quote font-lock))
+ '(ccls-enable-skipped-ranges nil t)
+ '(ccls-executable nil t)
+ '(ccls-sem-highlight-method (quote font-lock) t)
  '(company-begin-commands (quote (self-insert-command)))
  '(company-box-backends-colors nil t)
  '(company-box-doc-delay 0.3)
@@ -130,7 +130,7 @@
          (auto-package-update-now)))))))
  '(dashboard-set-heading-icons t)
  '(dashboard-set-navigator t)
- '(dashboard-startup-banner "/home/tusharjain/.emacs.d/images/KEC_Dark_BK_Small.png")
+ '(dashboard-startup-banner "/Users/tusharjain/.emacs.d/images/KEC_Dark_BK_Small.png")
  '(default-gutter-position (quote bottom))
  '(default-input-method "pyim")
  '(delete-by-moving-to-trash t)
@@ -201,7 +201,7 @@
            " " filename-and-process)
      (mark " "
            (name 16 -1)
-           " " filename))))
+           " " filename))) t)
  '(ibuffer-vc-skip-if-remote nil t)
  '(inhibit-compacting-font-caches t t)
  '(ivy-count-format "【%d/%d】")
@@ -218,28 +218,28 @@
  '(load-prefer-newer t)
  '(make-backup-files nil)
  '(menu-bar-mode t)
- '(multi-term-program "/usr/bin/bash" t)
+ '(multi-term-program "/bin/bash" t)
  '(objed-cursor-color "#ff6c6b")
- '(org-agenda-window-setup (quote other-window) t)
- '(org-confirm-babel-evaluate nil t)
- '(org-export-backends (quote (ascii html icalendar latex md odt)) t)
- '(org-log-done (quote time) t)
- '(org-plantuml-jar-path "/home/tusharjain/tools/plantuml/plantuml.jar" t)
+ '(org-agenda-window-setup (quote other-window))
+ '(org-confirm-babel-evaluate nil)
+ '(org-export-backends (quote (ascii html icalendar latex md odt)))
+ '(org-log-done (quote time))
+ '(org-plantuml-jar-path "/Users/tusharjain/tools/plantuml/plantuml.jar" t)
  '(org-todo-keywords
    (quote
-    ((sequence "TODO" "IN-PROGRESS" "REVIEW" "|" "DONE"))) t)
- '(org-use-speed-commands t t)
+    ((sequence "TODO" "IN-PROGRESS" "REVIEW" "|" "DONE"))))
+ '(org-use-speed-commands t)
  '(p4-verbose nil)
  '(package-selected-packages
    (quote
     (elpy importmagic indent-tools py-autopep8 py-yapf pydoc auto-complete auto-complete-auctex auto-complete-c-headers auto-complete-chunk auto-complete-clang auto-complete-clang-async auto-complete-distel auto-complete-exuberant-ctags auto-complete-nxml auto-complete-pcmp auto-complete-rst auto-complete-sage bbyac compact-docstrings company-anaconda company-ansible company-arduino company-auctex company-axiom company-bibtex company-c-headers company-cabal company-coq company-ctags company-dcd company-dict company-distel company-ebdb company-edbi company-emacs-eclim company-emoji company-erlang company-flow company-flx company-fuzzy company-ghc company-ghci company-glsl company-go company-inf-ruby company-irony company-irony-c-headers company-jedi company-lean company-lua company-math company-nand2tetris company-native-complete company-nginx company-ngram company-nixos-options company-org-roam company-php company-phpactor company-plsense company-pollen company-posframe company-prescient company-qml company-quickhelp company-quickhelp-terminal company-racer company-reftex company-restclient company-rtags company-shell company-solidity company-sourcekit company-stan company-statistics company-suggest company-tern company-terraform company-try-hard company-web company-ycm company-ycmd groovy-mode dockerfile-mode docker auctex haskell-mode company lsp-mode flycheck-posframe flycheck-grammarly yasnippet treemacs projectile magit lsp-pyre ivy-rich ivy-posframe yasnippet-snippets which-key web-mode use-package undo-tree typescript-mode treemacs-projectile treemacs-magit toc-org term-keys super-save sudo-edit speed-type smartparens shell-here quickrun pyim posframe popup-kill-ring plantuml-mode pdf-tools ox-gfm org-edit-latex mu4e-overview mu4e-alert modern-cpp-font-lock lsp-ui lsp-python-ms lsp-java json-mode js2-mode iedit htmlize highlight-indent-guides graphql go-mode format-all flycheck exec-path-from-shell evil-nerd-commenter ess erc-image erc-hl-nicks emmet-mode dumb-jump doom-themes doom-modeline disk-usage discover-my-major dired-single diminish dashboard dap-mode crux counsel company-tabnine company-lsp company-box ccls beacon auto-package-update amx all-the-icons-dired aio 2048-game)))
  '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))
- '(projectile-completion-system (quote ivy))
+ '(projectile-completion-system (quote ivy) t)
  '(pyim-default-scheme (quote quanpin) t)
  '(pyim-page-length 9 t)
  '(pyim-page-tooltip (quote posframe) t)
- '(python-indent-offset 4)
- '(python-shell-interpreter "python3")
+ '(python-indent-offset 4 t)
+ '(python-shell-interpreter "python3" t)
  '(recentf-auto-cleanup "05:00am")
  '(recentf-exclude
    (quote
@@ -248,6 +248,7 @@
  '(recentf-max-saved-items 200)
  '(save-place-mode t nil (saveplace))
  '(savehist-mode t)
+ '(shell-input-autoexpand t)
  '(show-paren-mode t)
  '(show-trailing-whitespace t)
  '(size-indication-mode t)
@@ -291,7 +292,7 @@
  '(treemacs-max-git-entries 5000 t)
  '(treemacs-no-delete-other-windows t t)
  '(treemacs-no-png-images nil t)
- '(treemacs-persist-file "/home/tusharjain/.emacs.d/.cache/treemacs-persist" t)
+ '(treemacs-persist-file "/Users/tusharjain/.emacs.d/.cache/treemacs-persist" t)
  '(treemacs-project-follow-cleanup nil t)
  '(treemacs-recenter-after-file-follow nil t)
  '(treemacs-recenter-after-tag-follow nil t)
@@ -354,7 +355,7 @@
  '(erc-notice-face ((t (:foreground "#ababab"))))
  '(flycheck-posframe-border-face ((t (:inherit default))))
  '(font-lock-comment-face ((t (:foreground "#828282"))))
- '(hl-line ((t (:background "color-235"))))
+ '(hl-line ((t (:inherit highlight))))
  '(lsp-ui-doc-background ((t (:background nil))))
  '(lsp-ui-doc-header ((t (:inherit (font-lock-string-face italic)))))
  '(mode-line ((t (:background "color-240" :foreground "#bfbfbf" :box nil))))
