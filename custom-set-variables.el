@@ -358,7 +358,6 @@
  '(lsp-ui-doc-background ((t (:background nil))))
  '(lsp-ui-doc-header ((t (:inherit (font-lock-string-face italic)))))
  '(mode-line ((t (:background "color-240" :foreground "#bfbfbf" :box nil))))
- '(mode-line-inactive ((t (:background "color-238" :foreground "color-233" :box nil))))
  '(snails-content-buffer-face ((t (:background "#111" :height 110))))
  '(snails-header-line-face ((t (:inherit font-lock-function-name-face :underline t :height 1.1))))
  '(snails-input-buffer-face ((t (:background "#222" :foreground "gold" :height 110)))))
