@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 50
+;;     Update #: 52
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -130,7 +130,7 @@
          (auto-package-update-now)))))))
  '(dashboard-set-heading-icons t)
  '(dashboard-set-navigator t)
- '(dashboard-startup-banner "/Users/tusharjain/.emacs.d/images/KEC_Dark_BK_Small.png")
+ '(dashboard-startup-banner "./images/KEC_Dark_BK_Small.png")
  '(default-gutter-position (quote bottom))
  '(default-input-method "pyim")
  '(delete-by-moving-to-trash t)
@@ -224,7 +224,6 @@
  '(org-confirm-babel-evaluate nil t)
  '(org-export-backends (quote (ascii html icalendar latex md odt)) t)
  '(org-log-done (quote time) t)
- '(org-plantuml-jar-path "/Users/tusharjain/tools/plantuml/plantuml.jar" t)
  '(org-todo-keywords
    (quote
     ((sequence "TODO" "IN-PROGRESS" "REVIEW" "|" "DONE"))) t)
@@ -292,7 +291,7 @@
  '(treemacs-max-git-entries 5000 t)
  '(treemacs-no-delete-other-windows t t)
  '(treemacs-no-png-images nil t)
- '(treemacs-persist-file "/Users/tusharjain/.emacs.d/.cache/treemacs-persist" t)
+ '(treemacs-persist-file "./.cache/treemacs-persist" t)
  '(treemacs-project-follow-cleanup nil t)
  '(treemacs-recenter-after-file-follow nil t)
  '(treemacs-recenter-after-tag-follow nil t)
