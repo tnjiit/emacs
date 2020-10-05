@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 54
+;;     Update #: 55
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -76,17 +76,17 @@
  '(ccls-enable-skipped-ranges nil t)
  '(ccls-executable nil t)
  '(ccls-sem-highlight-method (quote font-lock) t)
- '(company-begin-commands (quote (self-insert-command)) t)
+ '(company-begin-commands (quote (self-insert-command)))
  '(company-box-backends-colors nil t)
  '(company-box-doc-delay 0.3)
  '(company-box-max-candidates 50)
  '(company-box-show-single-candidate t)
- '(company-global-modes (quote (not shell-mode eaf-mode)) t)
- '(company-idle-delay 0.1 t)
- '(company-minimum-prefix-length 1 t)
- '(company-require-match (quote never) t)
- '(company-show-numbers t t)
- '(company-tooltip-align-annotations t t)
+ '(company-global-modes (quote (not shell-mode eaf-mode)))
+ '(company-idle-delay 0.1)
+ '(company-minimum-prefix-length 1)
+ '(company-require-match (quote never))
+ '(company-show-numbers t)
+ '(company-tooltip-align-annotations t)
  '(csv-header-lines 1)
  '(custom-safe-themes
    (quote
@@ -172,7 +172,7 @@
    (quote
     (not text-mode outline-mode fundamental-mode org-mode diff-mode shell-mode eshell-mode term-mode)))
  '(flycheck-indication-mode (quote right-fringe))
- '(flycheck-pos-tip-timeout 30 t)
+ '(flycheck-pos-tip-timeout 30)
  '(flycheck-python-pycompile-executable "python3")
  '(global-auto-revert-mode t)
  '(global-auto-revert-non-file-buffers t)
@@ -188,7 +188,7 @@
  '(grep-template "grep <X> <C> -nH -e <R> <F>")
  '(grep-use-null-device nil)
  '(header-copyright-notice "Copyright (C) 2019 Tushar Jain
-" t)
+")
  '(hl-sexp-background-color "#1c1f26")
  '(ibuffer-formats
    (quote
@@ -201,7 +201,7 @@
            " " filename-and-process)
      (mark " "
            (name 16 -1)
-           " " filename))))
+           " " filename))) t)
  '(ibuffer-vc-skip-if-remote nil t)
  '(inhibit-compacting-font-caches t t)
  '(ivy-count-format "【%d/%d】")
@@ -220,14 +220,14 @@
  '(menu-bar-mode t)
  '(multi-term-program "/bin/bash" t)
  '(objed-cursor-color "#ff6c6b")
- '(org-agenda-window-setup (quote other-window))
- '(org-confirm-babel-evaluate nil)
- '(org-export-backends (quote (ascii html icalendar latex md odt)))
- '(org-log-done (quote time))
+ '(org-agenda-window-setup (quote other-window) t)
+ '(org-confirm-babel-evaluate nil t)
+ '(org-export-backends (quote (ascii html icalendar latex md odt)) t)
+ '(org-log-done (quote time) t)
  '(org-todo-keywords
    (quote
-    ((sequence "TODO" "IN-PROGRESS" "REVIEW" "|" "DONE"))))
- '(org-use-speed-commands t)
+    ((sequence "TODO" "IN-PROGRESS" "REVIEW" "|" "DONE"))) t)
+ '(org-use-speed-commands t t)
  '(p4-verbose nil)
  '(package-selected-packages
    (quote
@@ -253,7 +253,7 @@
  '(show-paren-mode t)
  '(show-trailing-whitespace t)
  '(size-indication-mode t)
- '(sp-escape-quotes-after-insert nil t)
+ '(sp-escape-quotes-after-insert nil)
  '(super-save-auto-save-when-idle nil nil nil "Customized with use-package super-save")
  '(super-save-mode nil)
  '(term-bind-key-alist
