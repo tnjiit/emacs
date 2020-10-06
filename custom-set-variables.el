@@ -96,38 +96,41 @@
  '(dashboard-navigator-buttons
    (quote
     (((#("" 0 1
-         (rear-nonsticky t display
-                         (raise -0.06)
-                         font-lock-face
-                         (:family "github-octicons" :height 1.32)
-                         face
-                         (:family "github-octicons" :height 1.32)))
+	 (face
+	  (:family "github-octicons" :height 1.32)
+	  font-lock-face
+	  (:family "github-octicons" :height 1.32)
+	  display
+	  (raise -0.06)
+	  rear-nonsticky t))
        "M-EMACS" "Browse M-EMACS Homepage"
        (lambda
-         (&rest _)
-         (browse-url "https://github.com/MatthewZMD/.emacs.d")))
+	 (&rest _)
+	 (browse-url "https://github.com/MatthewZMD/.emacs.d")))
       (#("" 0 1
-         (rear-nonsticky t display
-                         (raise -0.12)
-                         font-lock-face
-                         (:family "file-icons" :height 1.2)
-                         face
-                         (:family "file-icons" :height 1.2)))
+	 (face
+	  (:family "file-icons" :height 1.2)
+	  font-lock-face
+	  (:family "file-icons" :height 1.2)
+	  display
+	  (raise -0.12)
+	  rear-nonsticky t))
        "Configuration" ""
        (lambda
-         (&rest _)
-         (edit-configs)))
+	 (&rest _)
+	 (edit-configs)))
       (#("" 0 1
-         (rear-nonsticky t display
-                         (raise -0.12)
-                         font-lock-face
-                         (:family "FontAwesome" :height 1.2)
-                         face
-                         (:family "FontAwesome" :height 1.2)))
+	 (face
+	  (:family "FontAwesome" :height 1.2)
+	  font-lock-face
+	  (:family "FontAwesome" :height 1.2)
+	  display
+	  (raise -0.12)
+	  rear-nonsticky t))
        "Update" ""
        (lambda
-         (&rest _)
-         (auto-package-update-now)))))))
+	 (&rest _)
+	 (auto-package-update-now)))))))
  '(dashboard-set-heading-icons t)
  '(dashboard-set-navigator t)
  '(dashboard-startup-banner "./images/KEC_Dark_BK_Small.png")
@@ -193,15 +196,15 @@
  '(ibuffer-formats
    (quote
     ((mark modified read-only locked " "
-           (name 35 35 :left :elide)
-           " "
-           (size 9 -1 :right)
-           " "
-           (mode 16 16 :left :elide)
-           " " filename-and-process)
+	   (name 35 35 :left :elide)
+	   " "
+	   (size 9 -1 :right)
+	   " "
+	   (mode 16 16 :left :elide)
+	   " " filename-and-process)
      (mark " "
-           (name 16 -1)
-           " " filename))) t)
+	   (name 16 -1)
+	   " " filename))))
  '(ibuffer-vc-skip-if-remote nil t)
  '(inhibit-compacting-font-caches t t)
  '(ivy-count-format "【%d/%d】")
@@ -239,12 +242,12 @@
  '(pyim-page-tooltip (quote posframe) t)
  '(python-indent-offset 4 t)
  '(python-shell-interpreter "python3" t)
- '(recentf-auto-cleanup "05:00am")
+ '(recentf-auto-cleanup "05:00am" t)
  '(recentf-exclude
    (quote
     ((expand-file-name package-user-dir)
-     ".cache" ".cask" ".elfeed" "bookmarks" "cache" "ido.*" "persp-confs" "recentf" "undo-tree-hist" "url" "COMMIT_EDITMSG\\'")))
- '(recentf-max-saved-items 200)
+     ".cache" ".cask" ".elfeed" "bookmarks" "cache" "ido.*" "persp-confs" "recentf" "undo-tree-hist" "url" "COMMIT_EDITMSG\\'")) t)
+ '(recentf-max-saved-items 200 t)
  '(rustic-ansi-faces
    ["#282c34" "#ff6c6b" "#98be65" "#ECBE7B" "#51afef" "#c678dd" "#46D9FF" "#bbc2cf"])
  '(save-place-mode t nil (saveplace))
