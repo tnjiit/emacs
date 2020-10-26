@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 108
+;;     Update #: 114
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -214,9 +214,15 @@
 (global-set-key (kbd "C-s") 'isearch-forward)
 (global-set-key (kbd "C-S-s") 'swiper-isearch)
 (global-set-key (kbd "C-x C-f") 'find-file)
+(global-set-key (kbd "M-<down>") 'block-nav-next-block)
+(global-set-key (kbd "M-<up>") 'block-nav-prev-block)
 ;; (global-set-key (kbd "C-x C-S-f") 'counsel-find-file)
 ;; (global-set-key (kbd "M-n") 'occur-next-error)
 ;; (global-set-key (kbd "C-x z") 'repeat)
+;; (define-key evil-motion-state-map "H" 'block-nav-previous-indentation-level)
+;; (define-key evil-motion-state-map "J" 'block-nav-next-block)
+;; (define-key evil-motion-state-map "K" 'block-nav-previous-block)
+;; (define-key evil-motion-state-map "L" 'block-nav-next-indentation-level)
 
 ;;--------------------------------------------------
 ;; Open new buffers horizontally rather than vertically

@@ -10,20 +10,16 @@
 ;;; Generated autoloads from ibuffer-vc.el
 
 (autoload 'ibuffer-vc-generate-filter-groups-by-vc-root "ibuffer-vc" "\
-Create a set of ibuffer filter groups based on the vc root dirs of buffers.
-
-\(fn)" nil nil)
+Create a set of ibuffer filter groups based on the vc root dirs of buffers." nil nil)
 
 (autoload 'ibuffer-vc-set-filter-groups-by-vc-root "ibuffer-vc" "\
-Set the current filter groups to filter by vc root dir.
-
-\(fn)" t nil)
+Set the current filter groups to filter by vc root dir." t nil)
  (autoload 'ibuffer-make-column-vc-status "ibuffer-vc")
  (autoload 'ibuffer-make-column-vc-relative-file "ibuffer-vc")
  (autoload 'ibuffer-make-column-vc-status-mini "ibuffer-vc")
  (autoload 'ibuffer-do-sort-by-vc-status "ibuffer-vc")
 
-(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ibuffer-vc" '("vc-" "ibuffer-vc-")))
+(if (fboundp 'register-definition-prefixes) (register-definition-prefixes "ibuffer-vc" '("ibuffer-vc-" "vc-")))
 
 ;;;***
 
