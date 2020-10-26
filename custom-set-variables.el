@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 58
+;;     Update #: 59
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -145,6 +145,7 @@
  '(dumb-jump-selector 'ivy t)
  '(ediff-split-window-function 'split-window-horizontally)
  '(ediff-window-setup-function 'ediff-setup-windows-plain)
+ '(ein:output-area-inlined-images t)
  '(enable-recursive-minibuffers t)
  '(erc-autojoin-channels-alist '(("freenode.net" "#emacs")) t)
  '(erc-autojoin-timing 'ident t)
