@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 114
+;;     Update #: 116
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -362,6 +362,12 @@
     ;; Display the buffer.
     (switch-to-buffer termbuf)))
 
+(add-hook 'python-mode-hook 'anaconda-mode)
+(add-hook 'python-mode-hook 'anaconda-eldoc-mode)
+(use-package elpy
+  :ensure t
+  :init
+  (elpy-enable))
 
 (provide 'init-tushar)
 

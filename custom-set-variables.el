@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 59
+;;     Update #: 62
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -76,17 +76,17 @@
  '(ccls-enable-skipped-ranges nil t)
  '(ccls-executable nil t)
  '(ccls-sem-highlight-method 'font-lock t)
- '(company-begin-commands '(self-insert-command) t)
+ '(company-begin-commands '(self-insert-command))
  '(company-box-backends-colors nil t)
  '(company-box-doc-delay 0.3)
  '(company-box-max-candidates 50)
  '(company-box-show-single-candidate t)
- '(company-global-modes '(not shell-mode eaf-mode) t)
- '(company-idle-delay 0.1 t)
- '(company-minimum-prefix-length 1 t)
- '(company-require-match 'never t)
- '(company-show-numbers t t)
- '(company-tooltip-align-annotations t t)
+ '(company-global-modes '(not shell-mode eaf-mode))
+ '(company-idle-delay 0.1)
+ '(company-minimum-prefix-length 1)
+ '(company-require-match 'never)
+ '(company-show-numbers t)
+ '(company-tooltip-align-annotations t)
  '(csv-header-lines 1)
  '(custom-safe-themes
    '("3346f0098a27c74b3e101a7c6b5e57a55cd073a8837b5932bff3d00faa9b76d0" "2f1518e906a8b60fac943d02ad415f1d8b3933a5a7f75e307e6e9a26ef5bf570" "1526aeed166165811eefd9a6f9176061ec3d121ba39500af2048073bea80911e" default))
@@ -166,10 +166,10 @@
  '(erc-track-exclude-types '("NICK" "PART" "MODE" "324" "329" "332" "333" "353" "477") t)
  '(fci-rule-color "#5B6268")
  '(find-grep-options "-q --color=auto -i")
- '(flycheck-emacs-lisp-load-path 'inherit t)
+ '(flycheck-emacs-lisp-load-path 'inherit)
  '(flycheck-global-modes
-   '(not text-mode outline-mode fundamental-mode org-mode diff-mode shell-mode eshell-mode term-mode) t)
- '(flycheck-indication-mode 'right-fringe t)
+   '(not text-mode outline-mode fundamental-mode org-mode diff-mode shell-mode eshell-mode term-mode))
+ '(flycheck-indication-mode 'right-fringe)
  '(flycheck-pos-tip-timeout 30)
  '(flycheck-python-pycompile-executable "python3")
  '(global-auto-revert-mode t)
@@ -186,7 +186,7 @@
  '(grep-template "grep <X> <C> -nH -e <R> <F>")
  '(grep-use-null-device nil)
  '(header-copyright-notice "Copyright (C) 2019 Tushar Jain
-" t)
+")
  '(hl-sexp-background-color "#1c1f26")
  '(ibuffer-formats
    '((mark modified read-only locked " "
@@ -198,7 +198,7 @@
            " " filename-and-process)
      (mark " "
            (name 16 -1)
-           " " filename)))
+           " " filename)) t)
  '(ibuffer-vc-skip-if-remote nil t)
  '(inhibit-compacting-font-caches t t)
  '(ivy-count-format "【%d/%d】")
@@ -225,7 +225,7 @@
  '(org-use-speed-commands t t)
  '(p4-verbose nil)
  '(package-selected-packages
-   '(block-nav flycheck-pos-tip jetbrains-darcula-theme ein pyvenv elpy importmagic indent-tools py-autopep8 py-yapf pydoc auto-complete auto-complete-auctex auto-complete-c-headers auto-complete-chunk auto-complete-clang auto-complete-clang-async auto-complete-distel auto-complete-exuberant-ctags auto-complete-nxml auto-complete-pcmp auto-complete-rst auto-complete-sage bbyac compact-docstrings company-anaconda company-ansible company-arduino company-auctex company-axiom company-bibtex company-c-headers company-cabal company-coq company-ctags company-dcd company-dict company-distel company-ebdb company-edbi company-emacs-eclim company-emoji company-erlang company-flow company-flx company-fuzzy company-ghc company-ghci company-glsl company-go company-inf-ruby company-irony company-irony-c-headers company-jedi company-lean company-lua company-math company-nand2tetris company-native-complete company-nginx company-ngram company-nixos-options company-org-roam company-php company-phpactor company-plsense company-pollen company-posframe company-prescient company-qml company-quickhelp company-quickhelp-terminal company-racer company-reftex company-restclient company-rtags company-shell company-solidity company-sourcekit company-stan company-statistics company-suggest company-tern company-terraform company-try-hard company-web company-ycm company-ycmd groovy-mode dockerfile-mode docker auctex haskell-mode company lsp-mode flycheck-posframe flycheck-grammarly yasnippet treemacs projectile magit lsp-pyre ivy-rich ivy-posframe yasnippet-snippets which-key web-mode use-package undo-tree typescript-mode treemacs-projectile treemacs-magit toc-org term-keys super-save sudo-edit speed-type smartparens shell-here quickrun pyim posframe popup-kill-ring plantuml-mode pdf-tools ox-gfm org-edit-latex mu4e-overview mu4e-alert modern-cpp-font-lock lsp-ui lsp-python-ms lsp-java json-mode js2-mode iedit htmlize highlight-indent-guides graphql go-mode format-all flycheck exec-path-from-shell evil-nerd-commenter ess erc-image erc-hl-nicks emmet-mode dumb-jump doom-themes doom-modeline disk-usage discover-my-major dired-single diminish dashboard dap-mode crux counsel company-tabnine company-lsp company-box ccls beacon auto-package-update amx all-the-icons-dired aio 2048-game))
+   '(anaconda-mode jedi block-nav flycheck-pos-tip jetbrains-darcula-theme ein pyvenv elpy importmagic indent-tools py-autopep8 py-yapf pydoc auto-complete auto-complete-auctex auto-complete-c-headers auto-complete-chunk auto-complete-clang auto-complete-clang-async auto-complete-distel auto-complete-exuberant-ctags auto-complete-nxml auto-complete-pcmp auto-complete-rst auto-complete-sage bbyac compact-docstrings company-anaconda company-ansible company-arduino company-auctex company-axiom company-bibtex company-c-headers company-cabal company-coq company-ctags company-dcd company-dict company-distel company-ebdb company-edbi company-emacs-eclim company-emoji company-erlang company-flow company-flx company-fuzzy company-ghc company-ghci company-glsl company-go company-inf-ruby company-irony company-irony-c-headers company-jedi company-lean company-lua company-math company-nand2tetris company-native-complete company-nginx company-ngram company-nixos-options company-org-roam company-php company-phpactor company-plsense company-pollen company-posframe company-prescient company-qml company-quickhelp company-quickhelp-terminal company-racer company-reftex company-restclient company-rtags company-shell company-solidity company-sourcekit company-stan company-statistics company-suggest company-tern company-terraform company-try-hard company-web company-ycm company-ycmd groovy-mode dockerfile-mode docker auctex haskell-mode company lsp-mode flycheck-posframe flycheck-grammarly yasnippet treemacs projectile magit lsp-pyre ivy-rich ivy-posframe yasnippet-snippets which-key web-mode use-package undo-tree typescript-mode treemacs-projectile treemacs-magit toc-org term-keys super-save sudo-edit speed-type smartparens shell-here quickrun pyim posframe popup-kill-ring plantuml-mode pdf-tools ox-gfm org-edit-latex mu4e-overview mu4e-alert modern-cpp-font-lock lsp-ui lsp-python-ms lsp-java json-mode js2-mode iedit htmlize highlight-indent-guides graphql go-mode format-all flycheck exec-path-from-shell evil-nerd-commenter ess erc-image erc-hl-nicks emmet-mode dumb-jump doom-themes doom-modeline disk-usage discover-my-major dired-single diminish dashboard dap-mode crux counsel company-tabnine company-lsp company-box ccls beacon auto-package-update amx all-the-icons-dired aio 2048-game))
  '(pdf-view-midnight-colors (cons "#bbc2cf" "#282c34"))
  '(projectile-completion-system 'ivy t)
  '(pyim-default-scheme 'quanpin t)
@@ -246,7 +246,7 @@
  '(show-paren-mode t)
  '(show-trailing-whitespace t)
  '(size-indication-mode t)
- '(sp-escape-quotes-after-insert nil t)
+ '(sp-escape-quotes-after-insert nil)
  '(super-save-auto-save-when-idle nil nil nil "Customized with use-package super-save")
  '(super-save-mode nil)
  '(term-bind-key-alist
