@@ -307,6 +307,7 @@
  '(treemacs-tag-follow-cleanup t t)
  '(treemacs-tag-follow-delay 1.5 t)
  '(treemacs-width 35 t)
+ '(undo-tree-enable-undo-in-region t)
  '(undo-tree-visualizer-diff t)
  '(undo-tree-visualizer-timestamps t)
  '(url-debug t)
