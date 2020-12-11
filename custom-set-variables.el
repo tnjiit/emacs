@@ -10,7 +10,7 @@
 ;; Package-Requires: ()
 ;; Last-Updated:
 ;;           By:
-;;     Update #: 63
+;;     Update #: 64
 ;; URL:
 ;; Doc URL:
 ;; Keywords:
@@ -96,34 +96,37 @@
  '(dashboard-navigator-buttons
    (quote
     (((#("" 0 1
-         (rear-nonsticky t display
-                         (raise -0.06)
-                         font-lock-face
-                         (:family "github-octicons" :height 1.32)
-                         face
-                         (:family "github-octicons" :height 1.32)))
+         (face
+          (:family "github-octicons" :height 1.32)
+          font-lock-face
+          (:family "github-octicons" :height 1.32)
+          display
+          (raise -0.06)
+          rear-nonsticky t))
        "M-EMACS" "Browse M-EMACS Homepage"
        (lambda
          (&rest _)
          (browse-url "https://github.com/MatthewZMD/.emacs.d")))
       (#("" 0 1
-         (rear-nonsticky t display
-                         (raise -0.12)
-                         font-lock-face
-                         (:family "file-icons" :height 1.2)
-                         face
-                         (:family "file-icons" :height 1.2)))
+         (face
+          (:family "file-icons" :height 1.2)
+          font-lock-face
+          (:family "file-icons" :height 1.2)
+          display
+          (raise -0.12)
+          rear-nonsticky t))
        "Configuration" ""
        (lambda
          (&rest _)
          (edit-configs)))
       (#("" 0 1
-         (rear-nonsticky t display
-                         (raise -0.12)
-                         font-lock-face
-                         (:family "FontAwesome" :height 1.2)
-                         face
-                         (:family "FontAwesome" :height 1.2)))
+         (face
+          (:family "FontAwesome" :height 1.2)
+          font-lock-face
+          (:family "FontAwesome" :height 1.2)
+          display
+          (raise -0.12)
+          rear-nonsticky t))
        "Update" ""
        (lambda
          (&rest _)
@@ -362,6 +365,7 @@
  '(lsp-ui-doc-background ((t (:background nil))))
  '(lsp-ui-doc-header ((t (:inherit (font-lock-string-face italic)))))
  '(mode-line ((t (:background "color-240" :foreground "#bfbfbf" :box nil))))
+ '(mode-line-inactive ((t (:background "#1d2026" :foreground "dark red" :box nil :height 100))))
  '(snails-content-buffer-face ((t (:background "#111" :height 110))))
  '(snails-header-line-face ((t (:inherit font-lock-function-name-face :underline t :height 1.1))))
  '(snails-input-buffer-face ((t (:background "#222" :foreground "gold" :height 110)))))
