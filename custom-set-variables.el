@@ -97,34 +97,37 @@
  '(dashboard-items '((recents . 7) (bookmarks . 7) (agenda . 5)))
  '(dashboard-navigator-buttons
    '(((#("" 0 1
-         (rear-nonsticky t display
-                         (raise -0.06)
-                         font-lock-face
-                         (:family "github-octicons" :height 1.32)
-                         face
-                         (:family "github-octicons" :height 1.32)))
+         (face
+          (:family "github-octicons" :height 1.32)
+          font-lock-face
+          (:family "github-octicons" :height 1.32)
+          display
+          (raise -0.06)
+          rear-nonsticky t))
        "M-EMACS" "Browse M-EMACS Homepage"
        (lambda
          (&rest _)
          (browse-url "https://github.com/MatthewZMD/.emacs.d")))
       (#("" 0 1
-         (rear-nonsticky t display
-                         (raise -0.12)
-                         font-lock-face
-                         (:family "file-icons" :height 1.2)
-                         face
-                         (:family "file-icons" :height 1.2)))
+         (face
+          (:family "file-icons" :height 1.2)
+          font-lock-face
+          (:family "file-icons" :height 1.2)
+          display
+          (raise -0.12)
+          rear-nonsticky t))
        "Configuration" ""
        (lambda
          (&rest _)
          (edit-configs)))
       (#("" 0 1
-         (rear-nonsticky t display
-                         (raise -0.12)
-                         font-lock-face
-                         (:family "FontAwesome" :height 1.2)
-                         face
-                         (:family "FontAwesome" :height 1.2)))
+         (face
+          (:family "FontAwesome" :height 1.2)
+          font-lock-face
+          (:family "FontAwesome" :height 1.2)
+          display
+          (raise -0.12)
+          rear-nonsticky t))
        "Update" ""
        (lambda
          (&rest _)
@@ -166,11 +169,11 @@
  '(erc-track-exclude-types '("NICK" "PART" "MODE" "324" "329" "332" "333" "353" "477") t)
  '(fci-rule-color "#5B6268")
  '(find-grep-options "-q --color=auto -i")
- '(flycheck-emacs-lisp-load-path 'inherit)
+ '(flycheck-emacs-lisp-load-path 'inherit t)
  '(flycheck-global-modes
-   '(not text-mode outline-mode fundamental-mode org-mode diff-mode shell-mode eshell-mode term-mode))
- '(flycheck-indication-mode 'right-fringe)
- '(flycheck-pos-tip-timeout 30)
+   '(not text-mode outline-mode fundamental-mode org-mode diff-mode shell-mode eshell-mode term-mode) t)
+ '(flycheck-indication-mode 'right-fringe t)
+ '(flycheck-pos-tip-timeout 30 t)
  '(flycheck-python-pycompile-executable "python3")
  '(global-auto-revert-mode t)
  '(global-auto-revert-non-file-buffers t)
@@ -186,7 +189,7 @@
  '(grep-template "grep <X> <C> -nH -e <R> <F>")
  '(grep-use-null-device nil)
  '(header-copyright-notice "Copyright (C) 2019 Tushar Jain
-")
+" t)
  '(hl-sexp-background-color "#1c1f26")
  '(ibuffer-formats
    '((mark modified read-only locked " "
@@ -217,12 +220,12 @@
  '(menu-bar-mode t)
  '(multi-term-program "/bin/bash" t)
  '(objed-cursor-color "#ff6c6b")
- '(org-agenda-window-setup 'other-window)
- '(org-confirm-babel-evaluate nil)
- '(org-export-backends '(ascii html icalendar latex md odt))
- '(org-log-done 'time)
- '(org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "REVIEW" "|" "DONE")))
- '(org-use-speed-commands t)
+ '(org-agenda-window-setup 'other-window t)
+ '(org-confirm-babel-evaluate nil t)
+ '(org-export-backends '(ascii html icalendar latex md odt) t)
+ '(org-log-done 'time t)
+ '(org-todo-keywords '((sequence "TODO" "IN-PROGRESS" "REVIEW" "|" "DONE")) t)
+ '(org-use-speed-commands t t)
  '(p4-verbose nil)
  '(package-selected-packages
    '(command-log-mode buffer-expose csv-mode anaconda-mode jedi block-nav flycheck-pos-tip jetbrains-darcula-theme ein pyvenv elpy importmagic indent-tools py-autopep8 py-yapf pydoc auto-complete auto-complete-auctex auto-complete-c-headers auto-complete-chunk auto-complete-clang auto-complete-clang-async auto-complete-distel auto-complete-exuberant-ctags auto-complete-nxml auto-complete-pcmp auto-complete-rst auto-complete-sage bbyac compact-docstrings company-anaconda company-ansible company-arduino company-auctex company-axiom company-bibtex company-c-headers company-cabal company-coq company-ctags company-dcd company-dict company-distel company-ebdb company-edbi company-emacs-eclim company-emoji company-erlang company-flow company-flx company-fuzzy company-ghc company-ghci company-glsl company-go company-inf-ruby company-irony company-irony-c-headers company-jedi company-lean company-lua company-math company-nand2tetris company-native-complete company-nginx company-ngram company-nixos-options company-org-roam company-php company-phpactor company-plsense company-pollen company-posframe company-prescient company-qml company-quickhelp company-quickhelp-terminal company-racer company-reftex company-restclient company-rtags company-shell company-solidity company-sourcekit company-stan company-statistics company-suggest company-tern company-terraform company-try-hard company-web company-ycm company-ycmd groovy-mode dockerfile-mode docker auctex haskell-mode company lsp-mode flycheck-posframe flycheck-grammarly yasnippet treemacs projectile magit lsp-pyre ivy-rich ivy-posframe yasnippet-snippets which-key web-mode use-package undo-tree typescript-mode treemacs-projectile treemacs-magit toc-org term-keys super-save sudo-edit speed-type smartparens shell-here quickrun pyim posframe popup-kill-ring plantuml-mode pdf-tools ox-gfm org-edit-latex mu4e-overview mu4e-alert modern-cpp-font-lock lsp-ui lsp-python-ms lsp-java json-mode js2-mode iedit htmlize highlight-indent-guides graphql go-mode format-all flycheck exec-path-from-shell evil-nerd-commenter ess erc-image erc-hl-nicks emmet-mode dumb-jump doom-themes doom-modeline disk-usage discover-my-major dired-single diminish dashboard dap-mode crux counsel company-tabnine company-lsp company-box ccls beacon auto-package-update amx all-the-icons-dired aio 2048-game))
@@ -246,7 +249,7 @@
  '(show-paren-mode t)
  '(show-trailing-whitespace t)
  '(size-indication-mode t)
- '(sp-escape-quotes-after-insert nil)
+ '(sp-escape-quotes-after-insert nil t)
  '(super-save-auto-save-when-idle nil nil nil "Customized with use-package super-save")
  '(super-save-mode nil)
  '(term-bind-key-alist
